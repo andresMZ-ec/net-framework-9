@@ -1,0 +1,15 @@
+version: '1.0.0'
+
+services:
+    mysql:
+        image: mysql
+        restart: always
+        environment:            
+              MYSQL_DATABASE: 'api_prueba'
+              MYSQL_USER: ''
+              MYSQL_PASSWORD: ''
+              MYSQL_ROOT_PASSWORD: ''
+        ports:
+            - '3306:3306'
+        expose:
+            - '3306'
