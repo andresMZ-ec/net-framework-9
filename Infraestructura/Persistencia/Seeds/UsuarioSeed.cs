@@ -25,6 +25,7 @@ namespace Infraestructura.Persistencia.Seeds
                     Apellidos = "del Sistema",
                     Nui = "9999999999",
                     Correo = "desarrollo@prueba.com",
+                    Contraseña = "$2a$12$cUEoxoHu/nXc3ePvRYLQyu7Hj2rrmJq4bdBuZrP56ib7XkKcJ0FGO", //dev12345
                     Estado = true,
                     EsEliminado = false,
                     FechaCreacion = fechaActual,
@@ -39,6 +40,7 @@ namespace Infraestructura.Persistencia.Seeds
                     Apellidos = "del Sistema",
                     Nui = "9999999998",
                     Correo = "admin@prueba.com",
+                    Contraseña = "$2a$12$/mvFBFCNHt4Ty0pm6GNixuSaouVc8yTfk7JS9l0ZgPszw/SD38zlW",  //admin12345
                     Estado = true,
                     EsEliminado = false,
                     FechaCreacion = fechaActual,
@@ -53,6 +55,7 @@ namespace Infraestructura.Persistencia.Seeds
                     Apellidos = "del Sistema",
                     Nui = "9999999997",
                     Correo = "mod@prueba.com",
+                    Contraseña = "$2a$12$WOqfxi5WpLbVITeq/m0AWuKtDIXeDhoA8pcqw9YYaI63xCJlKbs3q",    //mod12345
                     Estado = true,
                     EsEliminado = false,
                     FechaCreacion = fechaActual,

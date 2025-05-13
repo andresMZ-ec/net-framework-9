@@ -2,10 +2,12 @@
 using Dominio.Entidades;
 using Aplicacion.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace API.Controllers
 {
     [ApiController]
+    [Authorize]
     [Route("api/usuarios")]
     public class UsuarioController : ControllerBase
     {

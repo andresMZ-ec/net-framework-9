@@ -1,4 +1,5 @@
-﻿using Aplicacion.DTOs.Usuario;
+﻿using System.Text;
+using Aplicacion.DTOs.Usuario;
 using Aplicacion.Interfaces;
 using AutoMapper;
 using Dominio.Entidades;
@@ -11,6 +12,7 @@ namespace Dominio.Servicios
     {
         private readonly IUsuarioRepositorio _usuarioRepositorio;
         private readonly IMapper _mapper;
+        //private readonly 
 
         public UsuarioServicio(IUsuarioRepositorio usuarioRepositorio, IMapper mapper)
         {

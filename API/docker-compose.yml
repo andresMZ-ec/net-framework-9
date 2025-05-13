@@ -6,9 +6,9 @@ services:
         restart: always
         environment:            
               MYSQL_DATABASE: 'api_prueba'
-              MYSQL_USER: ''
-              MYSQL_PASSWORD: ''
-              MYSQL_ROOT_PASSWORD: ''
+              MYSQL_USER: 'andresmz'
+              MYSQL_PASSWORD: 'amz12345678'
+              MYSQL_ROOT_PASSWORD: 'amz12345'
         ports:
             - '3306:3306'
         expose:

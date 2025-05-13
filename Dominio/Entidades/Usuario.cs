@@ -19,6 +19,8 @@ namespace Dominio.Entidades
         [Required]
         public string Correo { get; set; }
         [Required]
+        public string Contraseña { get; set; }
+        [Required]
         public string Nui { get; set; }
         public bool Estado { get; set; }
         public bool EsEliminado { get; set; }

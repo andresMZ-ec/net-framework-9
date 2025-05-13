@@ -33,8 +33,17 @@ Primero realizamos la migracion de las entidades, para ello ejecutamos el siguie
 
 Una vez realizado la migración aplica los cambios a la base de datos por medio de:
 
-	dotnet ef database update
+	dotnet ef database update --project API
 
 Ejecuta con: 
 
 	dotnet run --project API
+
+### Variables de entorno para Autenticación
+
+Establece tu configuración para la generación del token de autenticidad
+
+	JWT_SECRET	-> clave secreta
+	JWT_ISSUE	-> Url del Host
+	JWT_URL_AUDIENCE=	-> Url de emisión de solicitud
+	JWT_TIME_EXPIRATION=	-> tiempo de válidez

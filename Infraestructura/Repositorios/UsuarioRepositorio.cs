@@ -33,7 +33,7 @@ namespace Infraestructura.Repositorios
         public async Task<Usuario?> ObtenerUsuarioPorFiltro(UsuarioFiltro filtro)
         {
             var query = _context.Usuarios.AsQueryable();
-            query.Where(u => !u.EsEliminado);
+            query.Where(u => !u.EsEliminado);            
 
             if (string.IsNullOrEmpty(filtro.nombreUsuario))
                 query.Where(u => u.NombreUsuario == filtro.nombreUsuario);
@@ -44,6 +44,7 @@ namespace Infraestructura.Repositorios
             if (string.IsNullOrEmpty(filtro.numCedula))
                 query.Where(u => u.Nui == filtro.numCedula);
 
+            query = query.Include(u => u.Rol);
             return await query.FirstOrDefaultAsync();
         }
 
